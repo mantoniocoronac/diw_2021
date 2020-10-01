@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+h1 {
+  border-top: solid black 1px;
+  color: #9c5e5e;
+}
+
+h2 {
+  color: #d46a6a;
+}
+
+p {
+  color: #f39508;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+}
+header h2, header p {
+  text-align: left;
+}
+header img {
+  width: 30%;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  header {
+    padding-top: 5%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: repeat(5, 40px);
+  }
+  header h2 {
+    height: 100%;
+    margin: 0px;
+  }
+  header p {
+    margin: 0px;
+  }
+  header img {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    width: 100%;
+    height: 70%;
+    margin-top: 22%;
+  }
+}
+@media (min-width: 993px) {
+  .container {
+    font-size: 20px;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: repeat(5, 40px);
+  }
+
+  h2 {
+    height: 100%;
+    margin: 0px;
+  }
+
+  p {
+    margin: 0px;
+  }
+
+  img {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    margin-top: 5%;
+    height: 150px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
