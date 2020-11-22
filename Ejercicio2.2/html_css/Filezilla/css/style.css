@@ -1,0 +1,102 @@
+@import url(../../css/style.css);
+
+
+@media only screen and (min-width: 1024px){
+
+    .container{
+        display: grid;
+        grid-template-areas: "head head"
+                             "menu menu"
+                             "tftp tftp"
+                             "foto1 texto1"
+                             "texto2 foto2"
+                             "foto3 texto3"
+                             "texto4 foto4"
+                             "foto5 texto5"
+                             "texto6 foto6"
+                             "foot foot";
+    }
+
+img{
+    width: 100%;
+    margin-left: 0%;
+}
+
+header{
+    grid-area: head;
+}
+
+.navegacion{
+    grid-area: menu;
+}
+
+#tftp{
+    grid-area:tftp;
+}
+
+#f1{     
+    grid-area: foto1;
+}
+
+#t1{
+    grid-area: texto1;
+    margin-top: 8%;
+}
+
+#f2{
+    grid-area: foto2;
+}
+
+#t2{
+    grid-area: texto2;
+    margin-top: 50%;
+}
+
+#f3{
+    grid-area: foto3;
+}
+
+#t3{
+    grid-area: texto3;
+    margin-top: 8%;
+}
+
+#f4{
+    grid-area: foto4;
+}
+
+#t4{
+    grid-area: texto4;
+    margin-top: 12%;
+}
+
+#f5{
+    grid-area: foto5;
+}
+
+#t5{
+    grid-area: texto5;
+    margin-top: 19%;
+}
+
+#f6{
+    grid-area: foto6;
+}
+
+#t6{
+    grid-area: texto6;
+    margin-top: 28%;
+}
+
+footer{
+    grid-area: foot;
+}
+      
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    img{
+        width: 80%;
+        margin-left: 0%;
+    }
+}

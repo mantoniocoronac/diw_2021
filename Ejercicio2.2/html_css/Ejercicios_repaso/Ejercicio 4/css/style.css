@@ -1,0 +1,10 @@
+@import url(../../../css/style.css);
+
+img{
+  padding-left: 35%;
+  margin-left: 0%;
+}
+
+a:hover{
+  color: orangered;
+}

@@ -1,0 +1,159 @@
+.container{
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header,footer{
+  background-color: black;
+  font: 100;
+  color: white;
+}
+
+img{
+  width: 30%;
+}
+
+ul{
+  list-style: none;
+}
+table{
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.navegacion,.navegacion td,.modulos ,.modulos td{
+  border: solid black 1px;
+  border-collapse: collapse;
+
+}
+
+a:link,a:visited,a:active{
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 1024px){
+
+.container{
+  display: grid;
+  grid-template-areas: "head head"
+                       "menu menu"
+                       "main foto"
+                       "modulo ejercicios"
+                       "foot foot";
+}
+
+header{
+  grid-area: head;
+}
+
+.navegacion{
+  grid-area: menu;
+  animation-name: colores;
+  animation-duration: 3s;
+}
+
+@keyframes colores {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+
+p{
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+} 
+
+.presimg{
+  grid-area:main;
+}
+
+img{
+  grid-area: foto;
+  margin-left: 95%;
+  width:45%;
+  animation-duration: 3s;
+  animation-name: girar;
+}
+
+@keyframes girar {
+  to { transform: rotate(360deg); -webkit-transform: rotate(360deg); -moz-transform: rotate(360deg); -ms-transform: rotate(360deg); -o-transform: rotate(360deg); }
+}
+
+.abajo{
+  grid-area: modulo;
+}
+
+.modulos{
+  margin-left: 15%;
+}
+
+.modulos td{
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.ejs{
+  grid-area: ejercicios;
+  margin-top: 20%;
+}
+
+footer{
+  grid-area: foot;
+}
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+
+  header{
+    display: flex;
+  }
+
+  .navegacion{
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    border: none;
+  }
+
+  #pres{
+    width: 50%;
+  }
+  img{
+    margin-left: 15%;
+    width: 30%;
+  }
+
+  .presimg{
+    display: flex;
+  }
+
+  .modulos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+
+  .ejs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
