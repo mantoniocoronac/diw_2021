@@ -1,0 +1,16 @@
+.pink{
+    color: rgb(247, 80, 107);
+}
+
+.grey{
+    background-color: rgb(187, 187, 187);
+}
+
+.altura{
+    height: 300px;
+}
+
+.botone{
+    background-color: rgb(247, 80, 107);
+    color: white;
+}

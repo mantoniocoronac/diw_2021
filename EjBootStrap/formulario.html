@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+</head>
+<body>
+    <form class="border border-primary m-4">
+        <div class="form-group ml-5 mt-4">
+            <label for="usr">Nombre:</label>
+            <input class="w-25" type="text" class="form-control" id="usr">
+        </div>
+        <div class="form-group ml-5">
+            <label class="" for="direccion">Direccion:</label>
+            <input class="w-25" type="text" class="form-control" id="direccion">
+        </div>
+        <div class="form-group ml-5">
+            <label for="sel1">Cuantos pasteles desea:</label>
+            <select class="form-control w-25" id="sel1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+        <label class="checkbox-inline ml-5 pr-3"><input type="checkbox" value="">Chocolate negro</label>
+        <label class="checkbox-inline pr-3"><input type="checkbox" value="">Chocolate blanco</label>
+        <label class="checkbox-inline"><input type="checkbox" value="">Ninguno</label>
+        <div class="ml-5">
+            <h6 class="mt-4">Tipo de reparto</h6>
+            <div class="radio">
+                <label><input type="radio" name="optradio">Reparto menos de 5km</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">Reparto menos de 10km</label>
+            </div>
+            <div class="radio disabled">
+                <label><input type="radio" name="optradio" disabled>Reparto a mas de 15km</label>
+            </div>
+        </div>
+        <div class="form-group ml-5">
+            <label for="comment">Algun comentario:</label>
+            <textarea class="form-control w-50" rows="5" id="comment"></textarea>
+          </div>
+        <div class="ml-5">
+            <div class="cell label mt-3">Subir factura:</div>
+            <div class="cell pb-5"><input type="file" name="file"/></div>
+        </div>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>
