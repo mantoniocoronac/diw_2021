@@ -1,0 +1,23 @@
+.menu{
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: $menufondo;
+    a{
+        text-decoration: none;
+        color: $menucolor;
+    }
+
+    a:hover {
+        background-color:$hoveriniciocolor;
+    }
+
+    ul{
+        margin-left: 25%;
+        margin-top: 3%;
+    }
+    li{
+        list-style: none;
+        display: inline;
+    }
+}

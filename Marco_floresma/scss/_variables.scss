@@ -1,0 +1,42 @@
+////@access public
+////@author Marco
+
+///Ancho del container
+////@group dimensiones_margin
+$container-width: 95%;
+///Margen del container
+////@group dimensiones_margin
+$container-margin: 0 auto;
+///Punto de ruptura tablet
+////@group puntos_ruptura
+$ttablet: 576px;
+///Punto de ruptura pc
+////@group puntos_ruptura
+$tpc: 992px;
+///Color del menu fondo
+////@group menu
+$menufondo: rgb(8, 57, 121);
+///Color de las letras del menu
+////@group menu
+$menucolor: rgb(255, 255, 255);
+///Color del borde de la pagina inicio
+////@group inicio
+$border-inicio-cdr: solid rgb(109, 108, 108) 1px;
+///Ancho de las cajas de la pagina inicio
+////@group inicio
+$width-cdr: 95%;
+///Color del hover del menu
+////@group menu
+$hoveriniciocolor: orangered;
+///Color de h1 de la parte inicio
+////@group inicio
+$flcolorh: red;
+///Color de boton fussia
+////@group color
+$bgbutcolor: rgb(197, 52, 52);
+///Color de boton blanco
+////@group color
+$butcolor: white;
+///Color de las letras de la pagina empresa
+////@group color
+$colorempresatitulo: rgb(122, 181, 236);

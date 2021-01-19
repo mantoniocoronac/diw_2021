@@ -1,0 +1,7 @@
+@function calcularAnchura($breakpoint){
+    @if $breakpoint == $ttablet{
+        @return $container-width - 5%;
+    } @else if $breakpoint == $tpc {
+        @return $container-width - 7%;
+    }
+}
